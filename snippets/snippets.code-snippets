@@ -1,0 +1,193 @@
+{
+  "Create a Page Component": {
+    "prefix": "prc",
+    "body": [
+      "",
+      "export default function ${1:Name}Page() {",
+      "  return (",
+      "    ${2:<div>",
+      "      <h1>Hello Page ${1:Name}</h1>",
+      "    </div>}",
+      "  );",
+      "}"
+    ],
+    "description": "Create a Page Component"
+  },
+  "Create a Layout Root and MetaData Component": {
+    "prefix": "lmrc",
+    "body": [
+      "",
+      "export const metadata = {",
+      " title: '${2:SEO Title}'",
+      " description: '${2:SEO Description}'",
+      "};",
+      "export default function ${1:Root Name}Layout({",
+      " children",
+      "}: {",
+      " children: React.ReactNode;",
+      "}) {",
+      "  return (",
+      "    ${3:<div>",
+      "      <h1>Hello Root and MetaData ${1:Name}</h1>",
+      "    </div>}",
+      "  );",
+      "}"
+    ],
+    "description": "Create a Layout Root Component and metadata"
+  },
+  "Create a Layout Root and MetaData Component jsx": {
+    "prefix": "lmrc-js",
+    "body": [
+      "",
+      "export const metadata = {",
+      " title: '${2:SEO Title}'",
+      " description: '${2:SEO Description}'",
+      "};",
+      "export default function ${1:Root Name}Layout({",
+      " children",
+      "}) {",
+      "  return (",
+      "    ${3:<div>",
+      "      <h1>Hello Root and MetaData ${1:Name}</h1>",
+      "    </div>}",
+      "  );",
+      "}"
+    ],
+    "description": "Create a Layout Root Component and metadata"
+  },
+  "Create a Layout Root  Component": {
+    "prefix": "lrc",
+    "body": [
+      "",
+      "export default function ${1:Root Name}Layout({",
+      " children",
+      "}: {",
+      " children: React.ReactNode;",
+      "}) {",
+      "  return (",
+      "    ${2:<div>",
+      "      <h1>Hello Root Layout ${1:Name}</h1>",
+      "    </div>}",
+      "  );",
+      "}"
+    ],
+    "description": "Create a Layout Root Component and metadata"
+  },
+  "Create a Client Component": {
+    "prefix": "crc",
+    "body": [
+      "'use client';",
+      "",
+      "interface ${1:Name}Props {",
+      "  ${2:propName}: ${3:string};",
+      "}",
+      "export default function ${1:Name}({}:${1:Name}Props) {",
+      "  return (",
+      "    ${4:<div>",
+      "      <h1>Hello Root and MetaData ${1:Name}</h1>",
+      "    </div>}",
+      "  );",
+      "}"
+    ],
+    "description": "Create a Client Component"
+  },
+  "Create a Client Component jsx": {
+    "prefix": "crc-js",
+    "body": [
+      "'use client';",
+      "",
+      "export default function ${1:Name}() {",
+      "  return (",
+      "    ${4:<div>",
+      "      <h1>Hello Root and MetaData ${1:Name}</h1>",
+      "    </div>}",
+      "  );",
+      "}"
+    ],
+    "description": "Create a Client Component"
+  },
+  "Create a MetaData": {
+    "prefix": "mr",
+    "body": [
+      "",
+      "export const metadata = {",
+      " title: '${1:SEO Title}'",
+      " description: '${1:SEO Description}'",
+      "};"
+    ],
+    "description": "Create a MetaData Component"
+  },
+  "Create a function generateMetaData for SEO": {
+    "prefix": "gmrf",
+    "body": [
+      "import type { Metadata } from 'next'",
+      "",
+      "export async function generateMetadata({ params }: { params: { ${2:[slug]} }}): Promise<Metadata> {",
+      " const product = await ${1:getData}(${2:[slug]});",
+      "   return { title: product.title }",
+      "}"
+    ],
+    "description": "Create a generateMetaData Component"
+  },
+  "Create a function generateStaticParams for Dynamic Page Static": {
+    "prefix": "gsf",
+    "body": [
+      "",
+      "export async function generateStaticParams() {",
+      " const posts = await fetch('${1:fetch Data}').then((res) => res.json());",
+      "",
+      " return posts.map((post) => ({",
+      "     slug: post.slug,",
+      " }));",
+      "}"
+    ],
+    "description": "Create a generateStaticParams function for Dynamic Page Static"
+  },
+  "Create a function Route Handler API GET with Dynamic": {
+    "prefix": "gsf",
+    "body": [
+      "import { NextResponse, NextRequest } from 'next/server'",
+      "",
+      "export async function GET(request: Request, context: { params: { ${1:slug}: string } }) { ",
+      "",
+      "  const { ${1:slug} } = context.params",
+      "}"
+    ],
+    "description": "Create a Route Handler API GET with Dynamic"
+  },
+  "Create a function Route Handler API GET": {
+    "prefix": "rag",
+    "body": [
+      "import { NextResponse, NextRequest } from 'next/server'",
+      "",
+      "export async function GET(request: Request) { ",
+      "",
+      "  return new Response(JSON.stringify({",
+      "    message: 'Hello World'",
+      "  }), { status: 200 } );",
+      "}"
+    ],
+    "description": "Create a Route Handler API GET"
+  },
+  "Create a function Route Handler API GET and Search": {
+    "prefix": "rags",
+    "body": [
+      "import { NextResponse, NextRequest } from 'next/server'",
+      "",
+      "export async function GET(request: Request) { ",
+      "",
+      " // Exampele Search",
+      " // http://localhost:3000/api/hello?name=John",
+      "",
+      "const { searchParams } = new URL(request.url);",
+      "const name = searchParams.get('name');",
+      "",
+      "  return new Response(JSON.stringify({",
+      "    message: `Hello ${1:name}`",
+      "  }), { status: 200 } );",
+      "}"
+    ],
+    "description": "Create a Route Handler API GET"
+  },
+}
+// 

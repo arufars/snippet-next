@@ -1,0 +1,26 @@
+{
+  "name": "snippets-next-13",
+  "displayName": "Snippets simple Next.js 13",
+  "description": "Here is a snippet of Next.js 13 code for a folder app",
+  "icon": "./images/next-icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arufars/snippet-next.git"
+  },
+  "publisher": "yuzu",
+  "version": "0.1.2",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
