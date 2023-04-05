@@ -189,5 +189,18 @@
     ],
     "description": "Create a Route Handler API GET"
   },
+  "Create a function Route Handler API POST": {
+    "prefix": "rap",
+    "body": [
+      "import { NextResponse, NextRequest } from 'next/server'",
+      "",
+      "export async function POST(req: Request) {",
+      " const ${1:{ title }} = await req.json();",
+      "",
+      " return NextResponse.json({ title }, { status: 201 });",
+      " }"
+    ],
+    "description": "Create a Route Handler API GET"
+  }
 }
-// 
+//

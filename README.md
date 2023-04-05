@@ -194,6 +194,21 @@ export async function GET(request: Request) {
 }
 ```
 
+### Route Handler API POST
+
+Prefix: `rap`
+
+```tsx
+import { NextResponse, NextRequest } from "next/server";
+
+export async function POST(request: Request) {
+  // this request body is a JSON object
+  const { title } = await req.json();
+
+  return new NextResponse.json({ title }, { status: 201 });
+}
+```
+
 ## Known Issues
 
 Calling out known issues can help limit users opening duplicate issues against your extension.
