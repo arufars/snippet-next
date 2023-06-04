@@ -1,20 +1,23 @@
 # Change Log
 
-All notable changes to the "snippets-next-13" extension will be documented in this file.
+## 0.1.3
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this
-file.
+### Patch Changes
 
-### 0.1.2
+- c73d529: Missing commas
+
+  Check suggested changes, some places where needed and another ones are just suggestions.
+
+## 0.1.2
 
 - add icon
 - repair readme
 
-### 0.1.1
+## 0.1.1
 
 - fix little bit
 
-### 0.1.0
+## 0.1.0
 
 - 10 new snippets
 
