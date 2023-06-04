@@ -22,5 +22,14 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ]
+  },
+  "scripts": {
+    "version": "node scripts/release.js",
+    "bump": "node scripts/bump.js",
+    "release": "pnpm run bump && pnpm run version"
+  },
+  "devDependencies": {
+    "@actions/exec": "^1.1.1",
+    "@changesets/cli": "^2.26.1"
   }
 }
