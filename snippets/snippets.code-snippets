@@ -18,8 +18,8 @@
     "body": [
       "",
       "export const metadata = {",
-      " title: '${2:SEO Title}'",
-      " description: '${2:SEO Description}'",
+      " title: '${2:SEO Title}',",
+      " description: '${2:SEO Description}',",
       "};",
       "export default function ${1:Root Name}Layout({",
       " children",
@@ -40,8 +40,8 @@
     "body": [
       "",
       "export const metadata = {",
-      " title: '${2:SEO Title}'",
-      " description: '${2:SEO Description}'",
+      " title: '${2:SEO Title}',",
+      " description: '${2:SEO Description}',",
       "};",
       "export default function ${1:Root Name}Layout({",
       " children",
@@ -111,8 +111,8 @@
     "body": [
       "",
       "export const metadata = {",
-      " title: '${1:SEO Title}'",
-      " description: '${1:SEO Description}'",
+      " title: '${1:SEO Title}',",
+      " description: '${1:SEO Description}',",
       "};"
     ],
     "description": "Create a MetaData Component"
