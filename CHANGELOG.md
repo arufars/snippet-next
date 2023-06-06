@@ -4,9 +4,7 @@
 
 ### Patch Changes
 
-- c73d529: Missing commas
-
-  Check suggested changes, some places where needed and another ones are just suggestions.
+- 8362a0f: Missing commas by @Klerith 
 
 ## 0.1.2
 

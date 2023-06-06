@@ -23,9 +23,12 @@
       }
     ]
   },
-  "scripts": {
-    "version": "node scripts/release.js",
-    "bump": "node scripts/bump.js",
-    "release": "pnpm run bump && pnpm run version"
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1"
   }
 }
