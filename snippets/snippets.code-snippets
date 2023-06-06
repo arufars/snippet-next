@@ -144,7 +144,7 @@
     "description": "Create a generateStaticParams function for Dynamic Page Static"
   },
   "Create a function Route Handler API GET with Dynamic": {
-    "prefix": "gsf",
+    "prefix": "ragd",
     "body": [
       "import { NextResponse, NextRequest } from 'next/server'",
       "",
@@ -189,5 +189,6 @@
     ],
     "description": "Create a Route Handler API GET"
   },
+
 }
 // 
