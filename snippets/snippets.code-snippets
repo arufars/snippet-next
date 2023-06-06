@@ -117,7 +117,7 @@
     ],
     "description": "Create a MetaData Component"
   },
-  "Create a function generateMetaData for SEO": {
+  "Create a function generateMetaData": {
     "prefix": "gmrf",
     "body": [
       "import type { Metadata } from 'next'",
@@ -187,8 +187,88 @@
       "  }), { status: 200 } );",
       "}"
     ],
-    "description": "Create a Route Handler API GET"
+    "description": "Create a Route Handler API GET and Search"
   },
-
+  "Create a function Route Handler API POST": {
+    "prefix": "rap",
+    "body": [
+      "import { NextResponse, NextRequest } from 'next/server'",
+      "",
+      "export async function POST(req: Request) {",
+      " const ${1:{ title }} = await req.json();",
+      "",
+      " return NextResponse.json({ $1:{ title } }, { status: 201 });",
+      " }"
+    ],
+    "description": "Create a Route Handler API GET POST"
+  },
+  "Create a function Route Handler API UPDATE": {
+    "prefix": "rau",
+    "body": [
+      "import { NextResponse, NextRequest } from 'next/server'",
+      "",
+      "export async function PUT(req: Request) {",
+      " const ${1:{ title }} = await req.json();",
+      "",
+      " return NextResponse.json({ $1:{ title } }, { status: 201 });",
+      " }"
+    ],
+    "description": "Create a Route Handler API GET UPDATE"
+  },
+  "Create a function Route Handler API DELETE": {
+    "prefix": "rad",
+    "body": [
+      "import { NextResponse, NextRequest } from 'next/server'",
+      "",
+      "export async function DELETE(req: Request) {",
+      " // your function here",
+      " }"
+    ],
+    "description": "Create a Route Handler API GET DELETE"
+  },
+  "Create a function Loading": {
+    "prefix": "load",
+    "body": [
+      "",
+      "export default function Loading() {",
+      " ",
+      " return (<div>Loading...</div>)",
+      " }"
+    ],
+    "description": "Create a Loading component"
+  },
+  "Create a function Error": {
+    "prefix": "err",
+    "body": [
+      "'use client'; // Error components must be Client Components",
+      "",
+      "import { useEffect } from 'react';",
+      "",
+      "export default function Error({",
+      "  error,",
+      "  reset,",
+      "}: {",
+      "  error: Error;",
+      "  reset: () => void;",
+      "}) {",
+      "  useEffect(() => {",
+      "    // Log the error to an error reporting service",
+      "    console.error(error);",
+      "  }, [error]);",
+      "",
+      "  return (",
+      "    <div>",
+      "      <h1>Something wrong!</h1>",
+      "      <button",
+      "        onClick={() => reset()}",
+      "      >",
+      "        Try again",
+      "      </button>",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "Error component with error handling and recovery"
+  }
 }
-// 
+//
