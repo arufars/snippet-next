@@ -251,8 +251,7 @@ export default function Loading() {
 Prefix: `err`
 
 ```tsx
-"use client"; // Error components must be Client Components
-
+"use client";
 import { useEffect } from "react";
 
 export default function Error({ error, reset }: { error: Error; reset: () => void }) {
