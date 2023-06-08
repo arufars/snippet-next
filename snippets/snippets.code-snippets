@@ -130,7 +130,7 @@
     "description": "Create a generateMetaData Component"
   },
   "Create a function generateStaticParams for Dynamic Page Static": {
-    "prefix": "gsf",
+    "prefix": "gsp",
     "body": [
       "",
       "export async function generateStaticParams() {",
