@@ -20,7 +20,6 @@ Tab trigger snippets are available for the following languages: `TypeScript Reac
 | [`rag`](#route-handler-api-get)                        | Create a function Route Handler API GET.                           |
 | [`ragd`](#route-handler-api-get-with-dynamic)          | Create a function Route Handler API GET with Dynamic.              |
 | [`rags`](#route-handler-api-get-and-search)            | Create a function Route Handler API GET and Search.                |
-| [`rags`](#route-handler-api-post)                      | Create a function Route Handler API POST.                          |
 | [`rap`](#route-handler-api-post)                       | Create a function Route Handler API POST.                          |
 | [`rau`](#route-handler-api-update)                     | Create a function Route Handler API UPDATE.                        |
 | [`rad`](#route-handler-api-delete)                     | Create a function Route Handler API DELETE.                        |
