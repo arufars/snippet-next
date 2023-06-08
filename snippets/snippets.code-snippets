@@ -197,7 +197,7 @@
       "export async function POST(req: Request) {",
       " const ${1:{ title }} = await req.json();",
       "",
-      " return NextResponse.json({ $1:{ title } }, { status: 201 });",
+      " return NextResponse.json( $1:{ title } }, { status: 201 });",
       " }"
     ],
     "description": "Create a Route Handler API GET POST"
