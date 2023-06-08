@@ -20,6 +20,12 @@ Tab trigger snippets are available for the following languages: `TypeScript Reac
 | [`rag`](#route-handler-api-get)                        | Create a function Route Handler API GET.                           |
 | [`ragd`](#route-handler-api-get-with-dynamic)          | Create a function Route Handler API GET with Dynamic.              |
 | [`rags`](#route-handler-api-get-and-search)            | Create a function Route Handler API GET and Search.                |
+| [`rags`](#route-handler-api-post)                      | Create a function Route Handler API POST.                          |
+| [`rap`](#route-handler-api-post)                       | Create a function Route Handler API POST.                          |
+| [`rau`](#route-handler-api-update)                     | Create a function Route Handler API UPDATE.                        |
+| [`rad`](#route-handler-api-delete)                     | Create a function Route Handler API DELETE.                        |
+| [`load`](#loading)                                     | Create a Loading component                                         |
+| [`err`](#error)                                        | Create a Error component with error handling and recovery          |
 
 ## Full Snippets
 
@@ -154,8 +160,7 @@ export async function generateStaticParams() {
 
 Prefix: `rag`
 
-```tsx
-
+```ts
 import { NextResponse, NextRequest } from 'next/server';
 
 export async function GET(request: Request, context: { params: { ${slug}: string } }) {
@@ -169,7 +174,7 @@ export async function GET(request: Request, context: { params: { ${slug}: string
 
 Prefix: `ragd`
 
-```tsx
+```ts
 
 import { NextResponse, NextRequest } from 'next/server';
 
@@ -184,13 +189,89 @@ export async function GET(request: Request, context: { params: { ${slug}: string
 
 Prefix: `rags`
 
-```tsx
+```ts
 import { NextResponse, NextRequest } from "next/server";
 
 export async function GET(request: Request) {
   const url = new URL(req.url).searchParams;
   const id = Number(url.get("id"));
   // Example: http://localhost:3000/api/posts?id=1
+}
+```
+
+### Route Handler API POST
+
+Prefix: `rap`
+
+```ts
+import { NextResponse, NextRequest } from "next/server";
+export async function POST(request: Request) {
+  // this request body is a JSON object
+  const { title } = await req.json();
+  return new NextResponse.json({ title }, { status: 201 });
+}
+```
+
+### Route Handler API UPDATE
+
+Prefix: `rau`
+
+```ts
+import { NextResponse, NextRequest } from "next/server";
+export async function PUT(request: Request) {
+  // this request body is a JSON object
+  const { title } = await req.json();
+  return new NextResponse.json({ title }, { status: 201 });
+}
+```
+
+### Route Handler API DELETE
+
+Prefix: `rad`
+
+```ts
+import { NextResponse, NextRequest } from "next/server";
+export async function DELETE(request: Request) {
+  // your function here
+}
+```
+
+### Loading
+
+Prefix: `load`
+
+```tsx
+export default function Loading() {
+  return <div>Loading...</div>;
+}
+```
+
+### Error
+
+Prefix: `err`
+
+```tsx
+"use client";
+import { useEffect } from "react";
+
+export default function Error({ error, reset }: { error: Error; reset: () => void }) {
+  useEffect(() => {
+    // Log the error
+    console.error(error);
+  }, [error]);
+
+  return (
+    <div>
+      <h2>Something went wrong!</h2>
+      <button
+        onClick={
+          () => reset()
+        }
+      >
+        Try again
+      </button>
+    </div>
+  );
 }
 ```
 
