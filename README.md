@@ -2,9 +2,11 @@
 
 This is a collection of useful code snippets to speed up development in `Next.js 13` (`app`) directory.
 
-## Usage
+## Usage 
 
 Tab trigger snippets are available for the following languages: `TypeScript React`, `Javascript React`.
+
+[![](https://img.shields.io/visual-studio-marketplace/i/yuzu.snippets-next-13?label=Market%20download&style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=yuzu.snippets-next-13)
 
 ## Features
 
