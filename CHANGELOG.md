@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.2.1
+
+### Patch Changes
+
+- 06f8dcb: changes little bit
+
 ## 0.2.0
 
 ### Minor Changes
