@@ -6,7 +6,7 @@
       "export default function ${1:Name}Page() {",
       "  return (",
       "    ${2:<div>",
-      "      <h1>Hello Page ${1:Name}</h1>",
+      "      <h1>Hello Page</h1>",
       "    </div>}",
       "  );",
       "}"
@@ -28,7 +28,7 @@
       "}) {",
       "  return (",
       "    ${3:<div>",
-      "      <h1>Hello Root and MetaData ${1:Name}</h1>",
+      "      <h1>Hello Root and MetaData</h1>",
       "    </div>}",
       "  );",
       "}"
@@ -40,15 +40,15 @@
     "body": [
       "",
       "export const metadata = {",
-      " title: '${2:SEO Title}',",
-      " description: '${2:SEO Description}',",
+      " title: 'your Title',",
+      " description: 'your Description',",
       "};",
       "export default function ${1:Root Name}Layout({",
       " children",
       "}) {",
       "  return (",
-      "    ${3:<div>",
-      "      <h1>Hello Root and MetaData ${1:Name}</h1>",
+      "    ${2:<div>",
+      "      <h1>Hello Root and MetaData</h1>",
       "    </div>}",
       "  );",
       "}"
@@ -78,13 +78,10 @@
     "body": [
       "'use client';",
       "",
-      "interface ${1:Name}Props {",
-      "  ${2:propName}: ${3:string};",
-      "}",
-      "export default function ${1:Name}({}:${1:Name}Props) {",
+      "export default function ${1:Name}() {",
       "  return (",
-      "    ${4:<div>",
-      "      <h1>Hello Root and MetaData ${1:Name}</h1>",
+      "    ${2:<div>",
+      "      <h1>Client Component</h1>",
       "    </div>}",
       "  );",
       "}"
@@ -99,7 +96,7 @@
       "export default function ${1:Name}() {",
       "  return (",
       "    ${4:<div>",
-      "      <h1>Hello Root and MetaData ${1:Name}</h1>",
+      "      <h1>Client Component ${1:Name}</h1>",
       "    </div>}",
       "  );",
       "}"
@@ -271,4 +268,4 @@
     "description": "Error component with error handling and recovery"
   }
 }
-//
+

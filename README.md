@@ -35,10 +35,10 @@ Tab trigger snippets are available for the following languages: `TypeScript Reac
 Prefix: `prc`
 
 ```tsx
-export default function {Name}Page() {
+export default function ${Name}Page() {
   return (
     <div>
-      <h1>Hello Page ${Name}</h1>
+      <h1>Hello Page</h1>
     </div>
   );
 }
@@ -58,7 +58,7 @@ export default function ${Root Name}Layout({
 }) {
   return (
     <div>
-      <h1>Hello Root Layout ${Name}</h1>
+      <h1>Hello Root Layout</h1>
     </div>
   );
 }
@@ -74,13 +74,10 @@ Prefix: `crc`
 
 'use client';
 
-interface ${Name}Props {
-  ${propName}: ${string};
-}
-export default function ${Name}({}:${Name}Props) {
+export default function ${Name}() {
   return (
     <div>
-      <h1>Hello Root and MetaData ${Name}</h1>
+      <h1>Client Component</h1>
     </div>
   );
 }
