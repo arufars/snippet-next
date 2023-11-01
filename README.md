@@ -1,6 +1,6 @@
-# Next.js 13 Extension Snippets
+# Next.js 14 Extension Snippets
 
-This is a collection of useful code snippets to speed up development in `Next.js 13` (`app`) directory.
+This is a collection of useful code snippets to speed up development in `Next.js 14` (`including version 13`) (`app`) directory.
 
 ## Usage 
 
